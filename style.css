@@ -1,0 +1,110 @@
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #457fca;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #5691c8, #457fca);
+
+
+}
+
+.container {
+    width: 40%;
+    min-width: 450px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    padding: 50px 30px;
+}
+
+.container * {
+    font-family: "Poppins", sans-serif;
+    border: none;
+    outline: none;
+}
+
+.input-wrapper {
+
+    padding: 30px 25px;
+
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+input,
+button {
+    height: 50px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    font-weight: 500;
+
+    border-radius: 8px;
+}
+
+input {
+    width: 60%;
+    padding: 0 20px;
+    font-size: 14px;
+}
+input:hover{
+    color: #5691c8;
+}
+
+button {
+    background-color: #FFCC70;
+    color: #5691c8;
+    width: 30%;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    color: #FF0000;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
+}
+.outputs-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.outputs-wrapper div{
+    height: 100px;
+    width: 100px;
+   margin-top:  10px;
+    /* From https://css.glass */
+    background: rgba(160, 246, 188, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(160, 246, 188, 0.3);
+    color: black;
+    display: grid;
+    place-items: center;
+    padding: 20px 0;
+
+}
+
+span {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+p {
+    font-size: 14px;
+    color: #707070;
+    font-weight: 400;
+}
